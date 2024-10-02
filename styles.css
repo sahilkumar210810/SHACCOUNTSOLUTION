@@ -1,0 +1,60 @@
+/* Reset some default margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-image: url('hdr.jpg'); /* Your image */
+    background-size: cover;
+    background-position: center;
+    height: 140px; /* Adjust the height here */
+    width: 100%;    /* Set width to 80% of the page */
+    margin: 0 auto; /* Center the header */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to start at the top */
+    padding-top: 30px;
+}
+nav {
+    background-color: rgba(0, 0, 0, 0); /* Optional: semi-transparent background for nav */
+    text-align: center; /* Center the navigation links */
+    padding: 10px 0; /* Add padding above and below the nav links */
+}
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 100px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 0; /* Remove padding from links */
+    margin: 0; 
+    display: inline-block; /* Ensures padding works */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: black; /* Change color */
+    background-color: white; /* Background color */
+    transform: scale(1.2); /* Scale effect */
+    transition: transform 0.3s ease; /* Smooth transition for all effects */    
+}
