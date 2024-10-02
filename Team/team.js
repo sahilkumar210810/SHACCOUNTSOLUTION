@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // Function to load member info from the text file
 async function loadMemberInfo() {
     try {
-        const response = await fetch('members.txt'); // Fetch the members.txt file
+        const response = await fetch('team/members.txt'); // Fetch the members.txt file
         if (!response.ok) {
             throw new Error('Network response was not ok ' + response.statusText);
         }
